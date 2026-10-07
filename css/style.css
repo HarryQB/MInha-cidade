@@ -1,0 +1,168 @@
+* {
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #f5f0e6;
+    margin: 0;
+}
+
+p {
+    color: black;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+main {
+    margin: 20px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+#titulo {
+    color: darkred;
+}
+
+section p {
+    color: darkblue;
+}
+
+h1,
+h2 {
+    font-family: Arial;
+}
+
+h2 {
+    color: #5c2f1f;
+}
+
+header a {
+    color: #f5f0e6;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: #8b6f47;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+button:hover {
+    color: red;
+}
+
+input[type="email"] {
+    background-color: lightyellow;
+}
+
+input {
+    padding: 5px;
+}
+
+.texto {
+    font-size: 24px;
+}
+
+.destaque {
+    font-weight: bold;
+}
+
+ul {
+    color: darkgreen;
+}
+
+img {
+    border: 2px solid black;
+    max-width: 100%;
+}
+
+footer {
+    text-align: center;
+    background-color: #5c2f1f;
+    padding: 10px;
+}
+
+footer p {
+    color: #f5f0e6;
+}
+
+
+/* GALERIA */
+
+.cabecalho-galeria {
+    text-align: center;
+    padding: 20px;
+}
+
+.cabecalho-galeria h1 {
+    color: #5c2f1f;
+}
+
+.cabecalho-galeria a {
+    color: #f5f0e6;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.cabecalho-galeria a:hover {
+    text-decoration: underline;
+}
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 18px;
+    margin: 20px;
+}
+
+.galeria article {
+    flex-basis: 160px;
+    flex-grow: 1;
+    max-width: 220px;
+    overflow: hidden;
+    border: 2px solid #5c2f1f;
+    border-radius: 3px;
+    transition: 0.3s;
+}
+
+.galeria article img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+    transition: 0.3s;
+}
+
+.galeria article:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+}
+
+.galeria article:hover img {
+    transform: scale(1.05);
+}
+
+@media (max-width: 600px) {
+
+    .galeria {
+        gap: 10px;
+        margin: 10px;
+    }
+
+    .galeria article {
+        flex-basis: 130px;
+        max-width: 180px;
+    }
+
+    .galeria article img {
+        height: 140px;
+    }
+}
